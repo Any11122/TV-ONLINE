@@ -8,8 +8,14 @@
 
 
 
-
+.text-center{
+	display: none;
+}
  
+
+ nav{
+ 	display: none;
+ }
 
 
 
@@ -145,7 +151,32 @@ nav ul li a:hover {
   padding: 20px;
 }
 
+
+.text-center{
+	display: block;
 }
+
+nav{
+	display: block;
+}
+
+
+.text-center > .row > .col > img{
+		width: 15%;
+    margin-bottom: 25px;
+	}
+
+
+		.text-center > .row > .col {
+    font-weight: 900;
+    font-size: 26px;
+
+			
+		}
+
+
+}
+
 
 
 @media only screen and (min-width: 900px){
@@ -170,27 +201,4 @@ nav > ul > li > a > img{
 
 
 
-
-
-
-
-
-
-
-
-	}
-
-
-
-	.text-center > .row > .col > img{
-		width: 15%;
-    margin-bottom: 25px;
-	}
-
-
-		.text-center > .row > .col {
-    font-weight: 900;
-    font-size: 26px;
-
-			
-		}
+	
