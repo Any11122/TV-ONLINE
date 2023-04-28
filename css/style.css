@@ -3,7 +3,9 @@
 	padding: 0;
 }
 
-
+.card-container{
+	display: none;
+}
 
 
 
@@ -16,6 +18,12 @@
  nav{
  	display: none;
  }
+
+
+.card-group{
+	display: none;
+}
+
 
 
 
@@ -112,6 +120,52 @@ background-color: black;
 
 	}
 
+.card-container{
+	display: block;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+
+.card-group{
+	display: block;
+}
+
+
 	nav {
   position: fixed;
   bottom: 0;
@@ -190,7 +244,7 @@ nav > ul > li > a > img{
 }
 
 
-
+}
 
 
 
