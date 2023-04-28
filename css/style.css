@@ -256,3 +256,68 @@ nav > ul > li > a > img{
 
 
 	
+
+
+
+/*	support style*/
+
+footer {
+ 
+  color: black;
+ 
+  text-align: center;
+   margin-top: 40%;
+}
+
+footer h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  color: black;
+  font-size: 20px;
+}
+
+.social-icons li a:hover {
+  color: gold;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  footer {
+    text-align: center;
+
+  }
+  .social-icons {
+    margin-top: 20px;
+  }
+}
