@@ -134,25 +134,25 @@ background-color: black;
   box-sizing: border-box;
 }
 
-.card {
+.cardd {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+text-align: center;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
   max-width: 250px;
 }
 
-.card img {
+.cardd img {
   width: 50%;
   height: auto;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.card h2 {
+.cardd h2 {
   font-size: 2.2rem;
   text-align: center;
   margin: 0;
