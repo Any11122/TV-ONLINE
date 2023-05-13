@@ -318,7 +318,7 @@ display: flex;
 /*logo & name*/
 
 .container{
-	width: 900px;
+	width: 600px;
 	height: 658px;
 	background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,61,57,1) 44%, rgba(57,92,107,1) 88%, rgba(57,92,107,1) 100%, rgba(57,92,107,1) 100%);
@@ -348,5 +348,54 @@ text-align: center;
 
 }
 
+.container > .content{
+	width: 600px;
+	height: 589px;
+}
 
+
+
+.container > .content > .cont > img {
+width: 569px;
+}
+
+
+
+.container2 > .content2{
+	width: 600px;
+	height: 828.48px;
+}
+
+.container2 > .content2 > .cont2 > .logo{
+	width: 580px;
+	margin-top: 30.8px;
+}
+
+.container2 > .content2 > .cont2 > .logo > img{
+	width: 574px;
+}
+
+
+.container2 > .content2 > .cont2 > .devices {
+    width: 600px;
+    height: 143.09px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.container2 > .content2 > .cont2 > .devices > .dev2 {
+    width: 331.22px;
+    height: 133.09px;
+    margin-top: 70px;
+}
+
+
+.footer {
+    width: 600px;
+    background-image: url(../img/logo3.jpg);
+    height: 479px;
+}
 }
