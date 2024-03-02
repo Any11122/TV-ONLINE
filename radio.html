@@ -1,0 +1,511 @@
+a<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Слушать Радио онлайн бесплатно</title>
+    <link rel="shortcut icon" href="img/newradio.png" type="image/png">
+ 
+    <script src="js/radio.js" type="text/javascript"></script>
+  <style>
+
+
+
+.nav{
+  max-width: 2160px;
+  height: 72px;
+ background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  
+}
+
+.nav > .nav_el{
+  width: 2160px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 40px;
+}
+
+.nav > .nav_el > .logo > a > img{
+  width: 150px;
+}
+
+.nav > .nav_el > li{
+  list-style: none;
+  
+}
+
+
+.nav > .nav_el > li > a{
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+ 
+  
+}
+
+
+
+
+
+.nav > .nav_el > li > a > img{
+font-size: 30px;
+}
+
+.nav > .nav_el > .logo_el{
+ 
+  height: 40px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  
+}
+
+
+   .all > .radio{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  max-width: 1900px;
+height: 150px;
+  display:flex;
+  text-align:center;
+  justify-content:space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.all > .radio > img {
+  max-width: 20%;
+  height: 74px;
+  border-radius: 5px;
+
+  margin-top: 10px;
+
+}
+
+.all > .radio >  .title {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+
+
+.all > .radio > #player {
+  width: 150px;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 900px){
+  .nav{
+    display: none;
+  }
+}
+
+
+  </style>
+</head>
+
+
+
+
+<body >
+
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4MW7XQ7');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4MW7XQ7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+ <div class="snowflakes" aria-hidden="true">
+    
+    
+  </div>
+<!-- <script src="js/snejki.js"></script> -->
+
+  
+<div class="nav">
+  <div class="nav_el">
+     <li class="logo">
+      <a href="index.html"><img src="img/img/logo.svg" alt=""></a>
+     </li>
+     <li class="logo_el">
+      <a href="index.html">
+          <img src="img/img/house.svg" alt="Home">
+          
+      </a>
+      <a href="channels.html">
+          <img src="img/img/list-ul.svg" alt="Channel List">
+      </a>
+      <a href="radio.html">
+          <img src="img/img/broadcast.svg" alt="radio">
+          
+      </a>
+      <a href="about.html">
+          <img src="img/img/about.svg" alt="about">
+      </a>
+      <a href="#">
+          <img src="img/img/profile.svg" alt="profile">
+      </a>
+     </li>
+  </div>
+</div>
+
+  
+  
+  
+
+
+
+
+
+
+<div class="all"  style="text-align: center;">
+
+
+
+  <div class="radio">
+
+    
+    
+    <img  src="img/radio img/energy.jpg" alt="Card Image">
+    <h2 class="title">Energy</h2>
+    <h2 id="player"></h2>
+    <script>
+      var player = new Playerjs({
+     id:"player",
+     file:[
+        {"title":"Energy","file":"https://pub0201.101.ru/stream/air/aac/64/99"}
+      
+      
+     ]
+  });
+    </script>
+  
+
+  </div>
+
+  <br>
+  <br>
+  <div class="radio">
+    <img  src="img/radio img/tnt_m.jpg" alt="Card Image">
+    <h2 class="title">TNT <br> MUSIC</h2>
+    <h2 id="radio1" style="width: 150px; height: 150px;"></h2>
+    <script>
+      var player = new Playerjs({
+     id:"radio1",
+     file:[
+      
+        {"title":"TNT MUSIC RADIO","file":"https://tntradio.hostingradio.ru:8027/tntradio128.mp3"},
+       
+     ]
+  });
+    </script>
+  
+
+  </div>
+
+
+  <br>
+  <br>
+  <div class="radio">
+    <img  src="img/radio img/ru_m.jpg" alt="Card Image">
+    <h2 class="title">RU <br> MUSIC</h2>
+    <h2 id="radio2" style="width: 150px; height: 150px;"></h2>
+    <script>
+      var player = new Playerjs({
+     id:"radio2",
+     file:[
+      
+        
+        {"title":"RU MUSIC","file":"https://pub0202.101.ru:8443/stream/pro/aac/64/41"},
+        
+     ]
+  });
+    </script>
+  
+
+  </div>
+
+<br>
+<br>
+
+   <div class="radio">
+    <img  src="img/radio img/shanson.jpg" alt="Card Image">
+    <h2 class="title">FM S</h2>
+    <h2 id="radio3" style="width: 150px; height: 150px;"></h2>
+    <script>
+      var player = new Playerjs({
+     id:"radio3",
+     file:[
+      
+        
+       
+        {"title":"Shanson","file":"https://pub0202.101.ru:8443/stream/pro/aac/64/50"}
+      
+        
+     ]
+  });
+    </script>
+  
+
+  </div>
+
+  <br>
+  <br>
+
+     <div class="radio">
+    <img  src="img/radio img/eurohits.jpg" alt="Card Image">
+    <h2 class="title">Euro <br> Hits</h2>
+    <h2 id="radio4" style="width: 150px; height: 150px;"></h2>
+    <script>
+      var player = new Playerjs({
+     id:"radio4",
+     file:[
+      
+        
+       
+       
+        {"title":"Euro Hits","file":"https://pub0202.101.ru:8443/stream/pro/aac/64/82"}
+      
+     ]
+  });
+    </script>
+  
+
+  </div>
+
+
+  <br>
+  <br>
+  
+  <div class="radio">
+    <img  src="img/radio img/avrora.jpg" alt="Card Image">
+    <h2 class="title">Radio <br> Aurora</h2>
+    <h2 id="radio5" style="width: 150px; height: 150px;"></h2>
+    <script>
+      var player = new Playerjs({
+     id:"radio5",
+     file:[
+      
+        
+       
+       
+        {"title":"Aurora","file":"  https://am.radioaurora.am/al.mp3"}
+      
+     ]
+  });
+    </script>
+  
+
+  </div>
+
+<br>
+<br>
+
+<div class="radio">
+  <img  src="img/radio img/avto.png" alt="Card Image">
+  <h2 class="title">Avto <br> Radio</h2>
+  <h2 id="radio6" style="width: 150px; height: 150px;"></h2>
+  <script>
+    var player = new Playerjs({
+   id:"radio6",
+   file:[
+    
+      
+     
+     
+      {"title":"Avto Radio","file":"  https://pub0202.101.ru:8443/stream/pro/aac/64/2"}
+    
+   ]
+});
+  </script>
+
+
+</div>
+
+
+
+<br>
+  
+<br>
+
+<div class="radio">
+  <img  src="img/radio img/HitFM.png" alt="Card Image">
+  <h2 class="title">Hit FM</h2>
+  <h2 id="radio7" style="width: 150px; height: 150px;"></h2>
+  <script>
+    var player = new Playerjs({
+   id:"radio7",
+   file:[
+    
+      
+     
+     
+      {"title":"Hit FM","file":"  https://online.hitfm.ua/HitFM_HD"}
+    
+   ]
+});
+  </script>
+
+
+</div>
+
+
+<br>
+<br>
+
+<div class="radio">
+  <img  src="img/radio img/kissfm.jpg" alt="Card Image">
+  <h2 class="title">KISS FM</h2>
+  <h2 id="radio8" style="width: 150px; height: 150px;"></h2>
+  <script>
+    var player = new Playerjs({
+   id:"radio8",
+   file:[
+    
+      
+     
+     
+      {"title":"Kiss FM","file":"  https://online.kissfm.ua/KissFM_HD"}
+    
+   ]
+});
+  </script>
+
+
+</div>
+
+<br>
+<br>
+
+
+<div class="radio">
+  <img  src="img/radio img/live.jpg" alt="Card Image">
+  <h2 class="title">Live <br> Hits</h2>
+  <h2 id="radio9" style="width: 150px; height: 150px;"></h2>
+  <script>
+    var player = new Playerjs({
+   id:"radio9",
+   file:[
+    
+      
+     
+     
+      {"title":"Live Hits","file":"https://pub0202.101.ru:8443/stream/pro/aac/64/8"}
+    
+   ]
+});
+  </script>
+
+
+</div>
+
+
+<br>
+<br>
+
+
+
+
+
+<div class="radio">
+  <img  src="img/radio img/like.jpg" alt="Card Image">
+  <h2 class="title">Like FM</h2>
+  <h2 id="radio10" style="width: 150px; height: 150px;"></h2>
+  <script>
+    var player = new Playerjs({
+   id:"radio10",
+   file:[
+    
+      
+     
+     
+      {"title":"Like FM","file":"https://pub0202.101.ru:8443/stream/air/aac/64/219"}
+    
+   ]
+});
+  </script>
+
+
+</div>
+
+<br>
+<br>
+
+
+<div class="radio">
+  <img  src="img/radio img/yu.jpg" alt="Card Image">
+  <h2 class="title">Yumr FM</h2>
+  <h2 id="radio11" style="width: 150px; height: 150px;"></h2>
+  <script>
+    var player = new Playerjs({
+   id:"radio11",
+   file:[
+    
+      
+     
+     
+      {"title":"Like FM","file":"https://pub0302.101.ru:8443/stream/air/aac/64/102"}
+    
+   ]
+});
+  </script>
+
+
+</div>
+
+
+<br>
+<br>
+
+
+
+</div>
+
+
+
+    <nav>
+        <ul>
+           
+          <li><a href="index.html"><img src="img/home.svg" alt=""></a></li>
+          <li><a href="index2.html"><img src="img/tv.svg" alt=""></a></li>
+          <li><a href="radio.html"><img src="img/play.svg" alt=""></a></li>
+          <li><a href="news.html"><img src="img/news.svg" alt=""></a></li>
+          <li><a href="about.html"><img src="img/browse.svg" alt=""></a></li>
+   
+  
+        </ul>
+  
+  
+  </nav>
+  
+
+
+  <script src="js/dark.js"></script>
+</body>
+</html>
